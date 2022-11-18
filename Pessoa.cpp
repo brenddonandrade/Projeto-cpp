@@ -6,7 +6,7 @@ using namespace std;
 #include "Pessoa.h"
 
     // Implementando os atributos
-    Pessoa::Pessoa(const string &nome, const string &email, const string &fone, const string &cpf): nome(nome), email(email), fone(fone), cpf(cpf){}
+    Pessoa::Pessoa(const string &nome, const string &cpf, const string &email, const string &fone): nome(nome), email(email), fone(fone), cpf(cpf){}
     Pessoa::~Pessoa(){
         cout << "Objeto destruido: Pessoa" << endl;
     }
@@ -20,4 +20,9 @@ using namespace std;
     void Pessoa::setFone(const string &fo){ fone = fo; }
     void Pessoa::setEmail(const string &em){ email = em; }
 
-    void Pessoa::
+    void Pessoa::mostra() const{
+        cout    << "Nome: " << nome << endl
+                << "CPF: " << cpf << endl
+                << "Fone: " << fone << endl
+                << "Email: " << email << "\n" << endl;
+    }
