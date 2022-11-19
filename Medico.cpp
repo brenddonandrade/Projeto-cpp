@@ -8,7 +8,7 @@ using namespace std;
 #include "Trabalhador.h"
 #include "Medico.h"
 
-    Medico::Medico(const string &crm, const int matricula, double salario, double plantao, const string &funcao, bool status, const string &nome, const string &cpf, const string &email, const string &fone): Trabalhador(matricula, salario, plantao, funcao, status, nome, cpf, email, fone), crm(crm){}
+    Medico::Medico(const string &crm, const string &ala, const int matricula, double salario, double plantao, const string &funcao, bool status, const string &nome, const string &cpf, const string &email, const string &fone): Trabalhador(matricula, salario, plantao, funcao, status, nome, cpf, email, fone), crm(crm), ala(ala) {}
 
     Medico::~Medico(){
         cout << "Objeto destruido: Medico." << endl;
@@ -19,7 +19,8 @@ using namespace std;
     void Medico::mostra() const {
         cout    << "\n\nNome: " << getNome() << endl
                 << "CPF: " << getCpf() << endl
-                << "CRM: "<< crm << endl //Unico atributo acrescentado
+                << "CRM: " << crm << endl 
+                << "Ala: " << ala << endl 
                 << "Email: " << getEmail() << endl 
                 << "Fone: " << getFone() << endl
                 << "Matricula: " << getMatricula() << endl
