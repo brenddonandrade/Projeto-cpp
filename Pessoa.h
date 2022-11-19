@@ -9,7 +9,7 @@
 using namespace std;
 
 class Pessoa {
-    private:
+    protected:
         const string nome, cpf;
         string email, fone;
 
