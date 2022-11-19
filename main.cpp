@@ -9,6 +9,7 @@ using namespace std;
 #include "Trabalhador.h"
 #include "Medico.h"
 #include "Enfermeiro.h"
+#include "Paciente.h"
 
 int main(){
     Pessoa *p; // ponteiro para facilitar o acesso
@@ -45,7 +46,8 @@ int main(){
     }
 
     {
-
+        Paciente p1 ("Grave", "Covid e Hipertensao", 47, true, true, true, "Ester Oliveira", "12343289809", "esteresquis@gmail.com", "24998384328");
+        p1.mostra();
     }
 
     return 0;
