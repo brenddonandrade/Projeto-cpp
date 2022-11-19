@@ -13,7 +13,7 @@ using namespace std;
     Trabalhador::Trabalhador(const int matricula, double salario, double plantao, const string &funcao, bool status, const string &nome, const string &cpf, const string &email, const string &fone) : Pessoa(nome, cpf, email, fone), matricula(matricula), salario(salario), plantao(plantao), funcao(funcao), status(status){}
 
     Trabalhador::~Trabalhador(){
-        cout << "Objeto destruido: Trabalhador" << "\n" <<  endl;
+        cout << "Objeto destruido: Trabalhador" <<  endl;
     }
 
 
@@ -22,6 +22,7 @@ using namespace std;
     double Trabalhador::getSalario() const { return salario;}
     double Trabalhador::getPlantao() const { return plantao;}
     string Trabalhador::getFuncao() const { return funcao;}
+    bool Trabalhador::getStatus() const { return status;}
 
     void Trabalhador::setSalario(double sal) { salario = sal; }
     void Trabalhador::setPlantao(double pla) { plantao = pla;}

@@ -24,5 +24,5 @@ using namespace std;
         cout    << "Nome: " << nome << endl
                 << "CPF: " << cpf << endl
                 << "Fone: " << fone << endl
-                << "Email: " << email << "\n" << endl;
+                << "Email: " << email << "\n\n\n" << endl;
     }

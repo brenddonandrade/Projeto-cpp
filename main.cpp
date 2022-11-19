@@ -7,6 +7,7 @@ using namespace std;
 // Importando arquivos
 #include "Pessoa.h"
 #include "Trabalhador.h"
+#include "Medico.h"
 
 int main(){
     Pessoa *p; // ponteiro para facilitar o acesso
@@ -28,7 +29,13 @@ int main(){
 
         Trabalhador t1(1122, 8000, 500, "Físico", false, "Brenddon Érick Andradre de Oliveira", "1810647786", "brenddonandrade@gmail.com", "24993287919");
 
+
         t1.mostra();
+    }
+
+    {
+        Medico m1 ("CRM/RJ 112233", 1242, 20000, 5000, "Médico", true, "Luis Freire de Mello", "13212394588", "luisfreire@gmail.com", "24998383567");
+        m1.mostra();
     }
 
 
