@@ -8,7 +8,7 @@ using namespace std;
     // Implementando os atributos
     Pessoa::Pessoa(const string &nome, const string &cpf, const string &email, const string &fone): nome(nome), email(email), fone(fone), cpf(cpf){}
     Pessoa::~Pessoa(){
-        cout << "Objeto destruido: Pessoa" << endl;
+        cout << "Objeto destruido: Pessoa\n\n" << endl;
     }
 
     //Getters and Setters

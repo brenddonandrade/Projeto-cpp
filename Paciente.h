@@ -19,7 +19,7 @@ class Paciente : public Pessoa{
         bool dependente, sexo, infectado;
 
     public:
-        Paciente(const string &, const string &, int, bool, bool, const string &, const string &, const string &, const string &);
+        Paciente(const string &, const string &, int, bool, bool, bool, const string &, const string &, const string &, const string &);
         ~Paciente();
 
         // Getts and setts

@@ -8,6 +8,7 @@ using namespace std;
 #include "Paciente.h"
 
 
+
 // Implementacao
     Paciente::Paciente(const string &estado,const string &doencas, int idade, bool dependente, bool sexo, bool infectado, const string &nome, const string &cpf, const string &email, const string &fone) : Pessoa(nome, cpf, email, fone), estado(estado), doencas(doencas), idade(idade), dependente(dependente), sexo(sexo), infectado(infectado){}
 
@@ -25,7 +26,7 @@ using namespace std;
     bool Paciente::getInfectado() const { return infectado;}
 
     void Paciente::setEstado(const string &es) { estado = es;}
-    void Paciente::setDoencas(const string &do) { doencas = do;}
+    void Paciente::setDoencas(const string &doen) { doencas = doen;}
     void Paciente::setIdade(int ida) { idade = ida;}
     void Paciente::setDependente( bool depe) { dependente = depe;}
     void Paciente::setSexo( bool sex) { sexo = sex;}
