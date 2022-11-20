@@ -41,7 +41,7 @@ using namespace std;
                 << "Email: " << email << endl
                 << "Estado: " << estado << endl
                 << "Doenca: " << doencas << endl
-                << "Idade: " << idade << "anos" << endl;
+                << "Idade: " << idade << " anos" << endl;
 
         if(dependente){
             cout << "Paciente necessita de companhia" << endl;

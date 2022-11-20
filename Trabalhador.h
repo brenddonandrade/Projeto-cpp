@@ -39,6 +39,10 @@ class Trabalhador : public Pessoa{
         void setFuncao(const string &);
         void setStatus(bool);
 
+        
+        // Metodo Membro
+        friend void desconto(Trabalhador);
+
         // Metodo mostra sobreposto ou sofrendo sobrecarga
         void mostra() const;
 

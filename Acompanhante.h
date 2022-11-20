@@ -28,7 +28,7 @@ class Acompanhante : public Pessoa{
 
         // Membro
         void mostra() const;
-}
+};
 
 
 
