@@ -25,20 +25,7 @@ using namespace std;
 
 
     void Enfermeiro::mostra() const {
-        cout    << "\n\nNome: " << getNome() << endl
-                << "CPF: " << getCpf() << endl
-                << "Coren: "<< coren << endl //Unico atributo acrescentado
-                << "Email: " << getEmail() << endl 
-                << "Fone: " << getFone() << endl
-                << "Matricula: " << getMatricula() << endl
-                << "Salario: R$" << getSalario() << endl
-                << "Plantao: R$" << getPlantao() << endl
-                << "Funcao: " << getFuncao() << endl;
-
-        if(getStatus()){
-            cout << "O trabalhador está ativo.\n" << endl;
-        } else {
-            cout << "O trabalhador está inativo. \n" << endl;
-        }
+        Trabalhador::mostra();
+        cout << "COREN: " << coren << "\n" << endl;
     }
     

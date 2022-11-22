@@ -17,20 +17,6 @@ using namespace std;
     string Medico::getCrm() const { return crm;}
     
     void Medico::mostra() const {
-        cout    << "\n\nNome: " << getNome() << endl
-                << "CPF: " << getCpf() << endl
-                << "CRM: " << crm << endl 
-                << "Ala: " << ala << endl 
-                << "Email: " << getEmail() << endl 
-                << "Fone: " << getFone() << endl
-                << "Matricula: " << getMatricula() << endl
-                << "Salario: R$" << getSalario() << endl
-                << "Plantao: R$" << getPlantao() << endl
-                << "Funcao: " << getFuncao() << endl;
-
-        if(getStatus()){
-            cout << "O trabalhador está ativo.\n" << endl;
-        } else {
-            cout << "O trabalhador está inativo. \n" << endl;
-        }
+        Trabalhador::mostra();
+        cout << "CRM: " << crm << "\n" << endl;
     }

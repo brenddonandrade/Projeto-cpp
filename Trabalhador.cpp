@@ -32,18 +32,15 @@ using namespace std;
 
     //Metodo mostra com sobrecarga
     void Trabalhador::mostra() const {
-        cout    << "Nome: " << nome << endl
-                << "CPF: " << cpf << endl   
-                << "Email: " << email << endl 
-                << "Fone: " << fone << endl
-                << "Matricula: " << matricula << endl
+        Pessoa::mostra();
+        cout    << "Matricula: " << matricula << endl
                 << "Salario: R$" << salario << endl
                 << "Plantao: R$" << plantao << endl
                 << "Funcao: " << funcao << endl;
 
         if(status){
-            cout << "O trabalhador está ativo.\n" << endl;
+            cout << "O trabalhador está ativo." << endl;
         } else {
-            cout << "O trabalhador está inativo. \n" << endl;
+            cout << "O trabalhador está inativo." << endl;
         }
     }

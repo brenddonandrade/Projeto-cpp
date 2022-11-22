@@ -35,11 +35,8 @@ using namespace std;
 
     // Membros
     void Paciente::mostra() const {
-        cout    << "Nome: " << nome << endl
-                << "CPF: " << cpf << endl
-                << "Fone: " << fone << endl
-                << "Email: " << email << endl
-                << "Estado: " << estado << endl
+        Pessoa::mostra();
+        cout    << "Estado: " << estado << endl
                 << "Doenca: " << doencas << endl
                 << "Idade: " << idade << " anos" << endl;
 

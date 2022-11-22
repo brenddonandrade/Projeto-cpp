@@ -23,11 +23,8 @@ using namespace std;
     void Acompanhante::setInfectado(bool inf) { infectado = inf;}
 
     void Acompanhante::mostra() const {
-        cout    << "Nome: " << nome << endl
-                << "CPF: " << cpf << endl
-                << "Fone: " << fone << endl
-                << "Email: " << email << endl
-                << "Idade: " << idade << " anos" << endl;
+        Pessoa::mostra();
+        cout    << "Idade: " << idade << " anos" << endl;
 
         if(sexo){
             cout << "Sexo: Masculino" << endl;
